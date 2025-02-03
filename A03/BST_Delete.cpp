@@ -28,7 +28,7 @@ using namespace std;
 void swap(int* a, int i, int j){
   cout<<"swapping"<<i<<" "<<j<<" "<<a[i]<<" and "<<a[j]<<endl;
   int temp = a[i];
-  
+
   a[i] = a[j];
   a[j] = temp;
 }
@@ -111,7 +111,7 @@ void loadUnique(int *a,int size){
 // it. 
 void printArray(int *a, int size, int foundIndex=-1){
   string index;
-  
+
   cout<<BLUE;
   for(int i=0;i<size;i++){
     if(a[i]<10){
@@ -138,8 +138,8 @@ void printArray(int *a, int size, int foundIndex=-1){
     }else{
       cout<<index<<" ";
     }
-    
-    
+
+
   }
   cout<<endl<<RESET;
 }
@@ -165,11 +165,11 @@ int binary_search(int *a,int size,int key){
       return m;
     }
 
-    
+
     if(r == m && m == l){
       return -1;
     }
-    
+
     if(key > a[m]){
       l = m+1;
     }else{
@@ -177,10 +177,20 @@ int binary_search(int *a,int size,int key){
     }
 
     m = (l+r)/2;
-  
+
   }
-  
-  
+
+}
+
+int delNode(int* arr, int n, int key){
+  int k = 0;
+  for (int i = 0; i < n; i++){ // goes through the array of the tree
+    if (arr[i] != key){ // checks if the currently selected value of the array is the same as the key
+      arr[k] = arr[i]; // copies the array
+      k++; // increments the location in arr k
+    }
+  }
+  return k; // returns the new array with the key removed
 }
 
 int main() {
@@ -191,7 +201,7 @@ int main() {
   int key = 0;  // key to look for
   int found = 0;  // found index location when searching, -1 if not found
 
-  
+
   loadUnique(a,size);  // load array with unique int's
   printArray(a,size);  // print the array
   cout<<endl;
@@ -204,7 +214,7 @@ int main() {
   // a function!!! 
 
   key = 1111;  // first lets use a key we won't find
-  
+
   found = binary_search(a,size,key);  // search for key
 
   // print array if find the item otherwise print "not found"
@@ -228,5 +238,10 @@ int main() {
     cout<<RED<<"key: "<<key<<" NOT FOUND"<< RESET<<endl;
   }
   cout<<endl;
+
+  key = 5;
   
+  delNode(a,size,key); // deletes the selected value from the array
+  printArray(a,size-1); // prints the new array
+  cout<<endl;
 }
