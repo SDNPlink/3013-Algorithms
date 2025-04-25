@@ -1,6 +1,6 @@
 
 |  |
 |  |
-|  <img src="![mail google](https://github.com/user-attachments/assets/388803a5-506f-4dd4-ace7-228e0f0105f6)
+|  <img src="![mail google](https://github.com/user-attachments/assets/388803a5-506f-4dd4-ace7-228e0f0105f6.png)
 " width="500">  |
 |  |
