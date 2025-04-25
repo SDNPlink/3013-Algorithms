@@ -1,8 +1,7 @@
 
 |  |
 |  |
-|  <img src="![mail google](https://github.com/user-attachments/assets/388803a5-506f-4dd4-ace7-228e0f0105f6.png)
-" width="500">  |
+|  <img src="![Poster of a student's study on Social's Media;s Mental Health Impacts on Students](https://github.com/user-attachments/assets/816287f3-be69-4483-9a1b-c9136592bc36.png)" width="500">  |
 |  |
 
 |                                Creepy Baby                                 |
